@@ -8,8 +8,8 @@ public class RangeClass implements Serializable {
     private final int lo;
     private final int hi;
     public RangeClass(int lo, int hi) {
-//        if (lo > hi)
-//            throw new IllegalArgumentException(String.format("%d, %d", lo, hi));
+        if (lo > hi)
+            throw new IllegalArgumentException(String.format("%d, %d", lo, hi));
         this.lo = lo;
         this.hi = hi;
     }
